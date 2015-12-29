@@ -1,0 +1,15 @@
+@import "variables/app-variables";
+.img-thumbnail{
+  box-shadow:5px 5px 5px grey;
+
+  margin:10%;
+}
+
+
+@media (min-width: $mobile-max-screen-width){
+  .img-thumbnail{
+    box-shadow:5px 5px 5px grey;
+
+    margin:0%;
+  }
+}
