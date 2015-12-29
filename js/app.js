@@ -3,6 +3,7 @@ var app = angular.module('Restaurant-app',
                          'restaurant.controller.mainCtrl',
                         'restaurant.controller.reserveCtrl',
                         'restaurant.controller.owner',
+                            'restaurant.controller.gallery',
                         'restaurant.service.bookings']);
 
 app.config(['$routeProvider',function($routeProvider){
@@ -26,6 +27,9 @@ app.config(['$routeProvider',function($routeProvider){
         controller:'bookingCtrl'
     }).when('/bookings',{
         redirectTo:'/owner'
+    }).when('/gallery',{
+        templateUrl:'partials/gallery.html',
+        controller:'galleryCtrl'
     }).otherwise({
         redirectTo:'/'
     });
