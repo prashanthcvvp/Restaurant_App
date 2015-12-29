@@ -1,0 +1,13 @@
+/* line 2, ../sass/gallery-style.scss */
+.img-thumbnail {
+  box-shadow: 5px 5px 5px grey;
+  margin: 10%;
+}
+
+@media (min-width: 770px) {
+  /* line 10, ../sass/gallery-style.scss */
+  .img-thumbnail {
+    box-shadow: 5px 5px 5px grey;
+    margin: 0%;
+  }
+}
